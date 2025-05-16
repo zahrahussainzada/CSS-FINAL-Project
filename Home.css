@@ -1,0 +1,191 @@
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: #AE8E9B;
+    margin: 0;
+  }
+.aref-ruqaa-regular {
+    font-family: "Aref Ruqaa", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  .aref-ruqaa-bold {
+    font-family: "Aref Ruqaa", serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  .kranky-regular {
+    font-family: "Kranky", serif; 
+    font-weight: 400;
+    font-style: normal;
+  }  
+  header{
+    background-color: #A49D99;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    font-family: "Kranky", serif;
+}
+.navbar ul{
+    list-style-type: none;
+    display: flex;
+}
+.navbar li{
+    
+    margin:0 15px;
+}
+.navbar a{
+    text-decoration: none;
+    color:white;
+    gap: 10px;
+   transition:0.2s
+}
+a:hover{
+    color:#9A6278;
+    text-overflow: clip;
+}
+.TopHead{
+    text-align: center;
+}
+
+.search-bar {
+    display: flex;
+    width: 200px;
+    padding:20px;
+    height:30px;
+  }
+
+  .search-bar input[type="search"] {
+    flex: 1;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-right: none;
+    border-radius: 4px 0 0 4px;
+    outline: none;
+  }
+  .search-bar button {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-left: none;
+    border-radius: 0 4px 4px 0;
+    background: white;   /* No background color */
+    cursor: pointer;
+  }
+.search-bar button:hover{
+    background-color:#9A6278;
+}
+  .search-bar button:focus {
+    outline: none;
+  }
+  input::placeholder{
+    font-family: "Kranky", serif;
+  }
+  .MainBody{
+    display:flex;
+    align-items: flex-end;
+    justify-content: center;
+    gap:10px;
+    margin:40px 0 40px 0;
+    flex:1;
+    flex-wrap: wrap;
+
+  }
+  .Intro{
+    background-color: #a5979c;
+    color: white;
+    padding:20px;
+    box-shadow: 4px 4px 4px #cdc8c4;
+    border-radius: 10px;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    width:250px;
+    height: 330px;
+    transform: translateY(-10px); /* lift the center box up */
+    font-family: "Kranky", serif;
+    line-height: 26px;
+    flex:1;
+    flex-wrap: wrap;
+    
+  }
+  
+  .Example{
+    background-color: #a5979c;
+    color: white;
+    box-shadow: 4px 4px 4px #cdc8c4;
+    border-radius: 10px;
+    width:250px;
+    height: 180;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    margin: 0 10px;
+    transition: transform 0.3s ease; /* smooth animation */
+    line-height: 1.5px;
+    flex:1;
+  }
+.two{
+    transform: translateY(-40px); /* lift the center box up */
+  }
+  .english{
+    font-family: "Kranky", serif;
+
+  }
+  .farsi{
+    font-family: "Aref Ruqaa", serif;
+  }
+  img{  /*prevents images from overflowing their containers and maintains their aspect ratios across different devices. */
+    max-width: 100%; 
+    height: auto;
+  }
+  .english {
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  
+  .Example:hover .english{
+    visibility: visible;
+    opacity: 1;
+  }
+  .Example:hover{
+    
+    transform: scale(1.009); /* zooms in 2% */
+    color: #9A6278;
+    
+  }
+  footer{
+    background-color: #A49D99;
+    justify-content: center;
+    align-content: center;
+    color: white;
+    padding:20px;
+    text-align: center;
+    margin-top: auto;
+}
+.bottom{
+    display: flex;
+    justify-content: flex-end; /* Aligns content to the right */
+    gap: 8px;
+    font-family: "Kranky", serif; 
+}
+.bottom a {
+    display: flex;
+    flex-direction: row; /* Ensures text comes before the image */
+    align-items: center; /* Vertically centers items */
+    text-decoration: none;
+    color: white;
+    gap: 8px; /* Adds space between text and image */
+  }
+.bottom img{  /*prevents images from overflowing their containers and maintains their aspect ratios across different devices. */
+    max-width: 100%; 
+    height: auto;
+    transform: transform 0.3 ease;
+    direction: rtl;
+  }
+  .bottom img:hover{
+    color: white;
+    transform: scale(1.1);
+  }

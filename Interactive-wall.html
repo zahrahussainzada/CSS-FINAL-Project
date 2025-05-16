@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Wall</title>
+    <link rel="icon" href="file:///Users/zahrahussainzada/Documents/HTML Pics/favicon.ico">
+    <link rel="stylesheet" href="Interactive-Wall.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Aref+Ruqaa:wght@400;700&family=Kranky&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+      <h1>Share Proverbs</h1>
+    </header>
+    <main>
+      <section class="FormBody">
+        <p>Share a famous or your favorite proverb. Let us know what does it mean and which language it comes from.</p>
+        <form>
+          <div>
+            <label for="Name">Name:</label>
+            <input type="text" id="Name" name="Name">
+          </div>
+  
+          <div>
+            <label for="Pro">Proverb Origin Language:</label>
+            <select name="Pro" id="Pro">
+              <option value="Select" disabled selected>Select</option>
+              <option value="Persian">Persian</option>
+              <option value="Urdu">Urdu</option>
+              <option value="Pashto">Pashto</option>
+              <option value="English">English</option>
+              <option value="Other">Other</option>
+            </select>
+          </div>
+  
+          <div>
+            <label for="Lang">Proverb:</label>
+            <input type="text" id="Lang" name="Lang">
+          </div>
+  
+          <div>
+            <label for="Meaning">In English:</label>
+            <input type="text" id="Meaning" name="Meaning">
+          </div>
+  
+          <div>
+            <label for="Mean">Meaning:</label>
+            <textarea id="Mean" name="Mean" rows="4"></textarea>
+          </div>
+  
+          <input type="submit" value="Submit" class="Button">
+        </form>
+      </section>
+    </main>
+    <footer>
+      <p>&copy; CSS Project</p>
+    </footer>
+  </body>
+</html>

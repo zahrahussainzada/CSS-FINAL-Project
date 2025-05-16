@@ -1,0 +1,94 @@
+body {
+    height: 100vh;
+    margin: 0;
+    background-color: #dfd2d8;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+.aref-ruqaa-regular {
+    font-family: "Aref Ruqaa", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  .aref-ruqaa-bold {
+    font-family: "Aref Ruqaa", serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  .kranky-regular {
+    font-family: "Kranky", serif; 
+    font-weight: 400;
+    font-style: normal;
+  }  
+
+  header {
+    background-color: #ba9faa;
+    padding: 20px;
+    width: 600px;
+    border-radius: 10px;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  header h1 {
+    font-family: "Kranky", sans-serif;
+    color: white;
+    margin: 0;
+  }
+  
+  .FormBody {
+    background-color: #ae8d9a;
+    width: 600px;
+    border-radius: 10px;
+    padding: 20px;
+    box-sizing: border-box;
+    color: white;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Adds space between form rows */
+    font-family: "Kranky", sans-serif;
+  }
+  
+  label {
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  input, textarea, select {
+    font-size: 1rem;
+    padding: 8px;
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  .Button{
+    transition: transform 0.3s ease-in-out;
+    font-family: "kranky", sans-serif;
+    width:fit-content;
+   margin:0 auto;
+  }
+  .Button:hover{
+    color:#3d2c33;
+    transform: scale(1.09);
+  }
+  select{
+    font-family: "kranky", sans-serif;
+  }
+  select option{
+    font-family: "kranky", sans-serif;
+  }
+  footer{
+    background-color:#ba9faa;
+    text-align: center;
+    font-family: "Kranky", sans-serif;
+    padding:20px;
+    width: 600px;
+    border-radius: 10px;  
+    margin-top: auto;
+}

@@ -1,0 +1,183 @@
+
+body {
+    min-height: 100vh;
+    display: grid;
+    background-color: #DFC8B6;
+    margin: 0;
+    justify-content: center;
+    align-items: center;
+  }
+.aref-ruqaa-regular {
+    font-family: "Aref Ruqaa", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+.aref-ruqaa-bold {
+    font-family: "Aref Ruqaa", serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+.kranky-regular {
+    font-family: "Kranky", serif; 
+    font-weight: 400;
+    font-style: normal;
+  }  
+.MainBody{
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(4,auto);
+    gap:10px;
+    justify-content: center;
+    align-items: center;
+    text-justify: center;
+    margin:10 px;
+  }
+.Example a{
+    text-decoration: none;
+    color: white;
+    margin: 0 auto;
+    transition: opacity 0.5s ease-in-out;
+    font-family: "kranky", sans-serif;
+  }
+header{
+    background-color: #C59384;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    padding:20px;
+    border-radius: 10px;
+    border-width: 150px;
+    margin: 10px;
+  }
+header h1{
+    font-family: "Kranky", serif; 
+    color: white;
+  }
+.Example{
+    width:300px;
+    height:380px;
+    display: grid;
+    grid-template-rows: repeat(4, auto);
+    row-gap: 5px;
+    border-radius: 20px;
+    background-color: #d6b3a8;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 4px 4px 4px #ffffff;
+    color:white;
+    margin:10 px;
+  }
+.english {
+    opacity: 0;
+    font-family: "kranky", sans-serif;
+    pointer-events: none; /* Optional: prevents invisible text from being clickable */
+}
+
+.Example:hover .english {
+  animation: fadeIn 0.6s ease forwards;
+}
+
+/* Optional: prevent repeat animation when hover again */
+.Example .english {
+  animation: none;
+}
+
+/* Animation keyframes */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.Example:hover .farsi,
+.Example:hover .english,
+.Example:hover a {
+    transform:scale(1.009);
+  color: #c18573;
+}
+.MainBody .farsi, .english{
+    color: white;
+    text-align: center;
+  }
+.MainBody img{
+    width:100%;
+    max-width: 600px;
+    margin:0 auto;
+    align-items: center;
+    justify-content: center;
+}
+footer{
+    background-color:#C59384;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+    color:white;
+    margin-top: auto;
+    border-radius: 10px 10px 10px 10px;
+    font-family: "kranky", sans-serif;
+}
+.Bottom-Nav { 
+    display: grid;
+    grid-template-columns: 1fr auto 1fr; /* Dividing the parent into three child. flexible left, fit center, flexible right. Bigger layout*/
+    align-items: center;
+    padding: 10px 20px;
+    font-family: "Kranky", serif;
+  }
+  
+  .bottom {
+    display: flex; /* Then using flex inside each grid child to align space, text, and image. Inline layout inside each section*/
+    align-items: center;
+    gap: 10px; /* Space between image and text */
+  }
+  
+  .left img {
+    transform: scaleX(-1); /* Flipped arrow */
+  }
+  
+  .right {
+    justify-content: flex-end; 
+    text-align: right;
+  }
+  
+  .right img {
+    transform: none; /* Normal arrow */
+  }
+  
+  /* Optional: center text alignment for h3 */
+  .center {
+    text-align: center;
+  }
+.Details{
+    background-color: #d6b3a8;
+    padding: 40px;
+    height:auto;
+    width:auto;
+    border-radius: 10px;
+    text-align: justify;
+    font-family: "kranky", sans-serif;
+    color:white;
+    display:grid;
+    gap:10px;
+}
+.Detailed{
+    background-color: #c8a99f;
+    padding: 40px;
+    height:auto;
+    width:auto;
+    border-radius: 10px;
+    text-align: justify;
+    font-family: "kranky", sans-serif;
+    color:white;
+    display:grid;
+    gap:10px;
+}
+.Details h4{
+    text-align: center;
+}
+.Detailed h4{
+    text-align: center;
+}

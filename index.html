@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Aref+Ruqaa:wght@400;700&family=Kranky&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="Home.css">
+    <link rel="icon" href="file:///users/zahrahussainzada/Documents/HTML Pics/favicon.ico" />
+</head>
+<body>
+    <header>
+         <form action="/search" method="get" class="search-bar"> <!--action="/search": where to send the data when the user submits it.-->
+            <input type="search" name="q" placeholder="Search..."><!--method="get/post": how to send the data get visible in url-post hidden inside the request.-->
+            <button type="submit"><!--name="q": says “When the user submits this form, send the value they typed into this input using the key q.”-->
+              🔍                    <!--action="/search": means send form data to the same domain/ domain of the current page. It is a relative URL-->
+            </button>
+        </form>
+        <div class="TopHead">
+            <h1>Afghan Proverbs</h1>
+            <h5>Afghan Proverbs in English</h5>
+        </div>
+        <nav class="navbar">
+            <ul>
+                <li><a href="#Details">Proverb Detail</a></li>
+                <li><a href="Gallery.html">Gallery</a></li>
+                <li><a href="Inter-Wall.html">Interactive Wall</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+    <section class="MainBody">
+        <div class="Example one">
+            <p class="farsi">از سیر تا پیاز</p>
+                <img src="file:///Users/zahrahussainzada/Documents/HTML Pics/sirtapiaz.png">
+               <p class="english"> From A to Z</p>
+        </div>
+        <div class="Example two">
+            <p class="farsi">کبوتر با کبوتر باز با باز</p>
+                <img src="file:///Users/zahrahussainzada/Documents/HTML Pics/Birds.png">
+            <p class="english">Birds of a feather, flock together.</p>
+        </div>
+        <div class="Intro">
+            <h3>SOME Proverbs</h3>
+            <p>Different languages are hard to understand, but what makes them fun is the things they have in common. We might speak a different language, 
+            but in some contexts we have the same words to say. The words are different, but meaning are the same. Guess the Proverbs first and then Hover
+            over the images.</p>
+        </div>
+        <div class="Example two">
+            <p class="farsi">پول علف خرس نیست</p>
+                <img src="file:///Users/zahrahussainzada/Documents/HTML Pics/Money Tree.png">
+            <p class="english">Money doesn’t grow on trees</p>
+        </div>
+        <div class="Example three">
+            <p class="farsi">وقت گل نی</p>
+                <img src="file:///Users/zahrahussainzada/Documents/HTML Pics/pigsfly.png" >
+            <p class="english">when pigs fly</p>
+        </div>
+    </section>
+    <div class="bottom">
+        <p>SEE Gallery</p>
+        <a href="gallery.html"><img src="file:///Users/zahrahussainzada/Documents/HTML Pics/arrow.png"  width="60"  height="30"></a>
+    </div>
+</main>
+<footer>
+    <p>&copy; CSS Second Project</p>
+</footer>
+</body>
+</html>
