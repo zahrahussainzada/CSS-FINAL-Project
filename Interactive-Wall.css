@@ -83,6 +83,33 @@ body {
   select option{
     font-family: "kranky", sans-serif;
   }
+  .Bottom-Nav { 
+    display: grid;
+    grid-template-columns: auto auto; /* Dividing the parent into three child. flexible left, fit center, flexible right. Bigger layout*/
+    align-items: center;
+    padding: 10px 20px;
+    font-family: "Kranky", serif;
+  }
+  
+  .bottom {
+    display: flex; /* Then using flex inside each grid child to align space, text, and image. Inline layout inside each section*/
+    align-items: center;
+    gap: 10px; /* Space between image and text */
+  }
+  .left img {
+    transform: scaleX(-1); /* Flipped arrow */
+  }
+  
+  .right {
+    justify-content: flex-end; 
+    text-align: right;
+  }
+  
+  .right img {
+    transform: none; /* Normal arrow */
+  }
+  
+  /* Optional: center text alignment for h3 */
   footer{
     background-color:#ba9faa;
     text-align: center;
