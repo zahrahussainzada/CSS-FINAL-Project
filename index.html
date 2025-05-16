@@ -14,10 +14,11 @@
 </head>
 <body>
     <header>
-         <form action="/search" method="get" class="search-bar"> <!--action="/search": where to send the data when the user submits it.-->
-            <input type="search" name="q" placeholder="Search..."><!--method="get/post": how to send the data get visible in url-post hidden inside the request.-->
+        <form class="search-bar"> <!--action="/search": where to send the data when the user submits it.-->
+            <input type="search" placeholder="Search..."><!--method="get/post": how to send the data get visible in url-post hidden inside the request.-->
             <button type="submit"><!--name="q": says “When the user submits this form, send the value they typed into this input using the key q.”-->
               🔍                    <!--action="/search": means send form data to the same domain/ domain of the current page. It is a relative URL-->
+                                     <!--I didn't use Query as you said so-->
             </button>
         </form>
         <div class="TopHead">
@@ -60,10 +61,6 @@
             <p class="english">when pigs fly</p>
         </div>
     </section>
-    <div class="bottom">
-        <p>SEE Gallery</p>
-        <a href="gallery.html"><img src="https://raw.githubusercontent.com/zahrahussainzada/CSS-FINAL-Project/refs/heads/main/arrow.png"  width="60"  height="30"></a>
-    </div>
 </main>
 <footer>
     <p>&copy; CSS Second Project</p>
